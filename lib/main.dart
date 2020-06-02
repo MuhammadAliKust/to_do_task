@@ -36,11 +36,11 @@ class _MyAppState extends State<MyApp> {
       model: _model,
       child: MaterialApp(
         home: SignIn(),
-        // routes: {
-        //   '/': (BuildContext context) =>
-        //       !_isAuthenticated ? SignIn() : Display(_model),
+        routes: {
+          '/': (BuildContext context) =>
+              !_isAuthenticated ? SignIn() : Display(_model),
           
-        // },
+        },
       ),
       
     );
