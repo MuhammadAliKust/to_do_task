@@ -35,7 +35,6 @@ class _MyAppState extends State<MyApp> {
     return ScopedModel<MainModel>(
       model: _model,
       child: MaterialApp(
-        home: SignIn(),
         routes: {
           '/': (BuildContext context) =>
               !_isAuthenticated ? SignIn() : Display(_model),
